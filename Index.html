@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>tic tac toe</title>
+   <meta name="viewport" content="width=device-width , initial-scale=1" >
+   <style type="text/css">
+      th {
+         border:1px solid black;
+         height:60px;
+         width:60px;
+         font-size:30px;
+        }
+      table {
+         margin-top:50%;
+         margin-left:20%;
+      }
+   </style>
+   <script type="text/javascript">
+      var turn = 1;
+      function put(elem) {
+        if(turn==1){
+          elem.innerHTML="0";
+          turn = 2;
+        }
+        else {
+          elem.innerHTML="x";
+          turn = 1;
+        }
+      }
+   </script>
+</head>
+<body>
+     <h1 style="text-align:center;font-family:cursive;" >tic tac toe</h1>
+   <table>
+      <tr>
+      <th onclick="put(this)"></th>
+      <th onclick="put(this)"></th>
+      <th onclick="put(this)"></th>
+      </tr>
+      <tr>
+      <th onclick="put(this)"></th>
+      <th onclick="put(this)"></th>
+      <th onclick="put(this)"></th>
+      </tr>
+      <tr>
+      <th onclick="put(this)"></th>
+      <th onclick="put(this)"></th>
+      <th onclick="put(this)"></th>
+      </tr>
+   </table>
+   <button onclick="window.reload()">reload</button>
+</body>
+</html>
